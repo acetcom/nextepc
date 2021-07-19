@@ -4,7 +4,7 @@ const db = require('./db')
 
 const router = express.Router();
 
-const secret = process.env.JWT_SECRET_KEY || 'change-me';
+const secret = process.env.JWT_SECRET_KEY;
 const passport = require('passport');
 const JWTstrategy = require('passport-jwt').Strategy;
 const ExtractJWT = require('passport-jwt').ExtractJwt;
